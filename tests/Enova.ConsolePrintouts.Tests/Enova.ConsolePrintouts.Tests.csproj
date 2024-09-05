@@ -1,0 +1,9 @@
+<Project Sdk="Soneta.Sdk/1.1.4">
+
+  <Import Project="$(SolutionRoot)\targets\units.targets" />
+
+  <ItemGroup>
+    <PackageReference Update="NUnit" Version="3.14.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+stages:
+  - build
+  - test
+  - quality
+
+include:
+  - 'gitlab/_partials/.gitlab-ci-variables.yml'
+  - 'gitlab/_partials/.gitlab-ci-build.yml'
+  - 'gitlab/_partials/.gitlab-ci-unit-test.yml'
+  - 'gitlab/_partials/.gitlab-ci-quality.yml'
+  - 'gitlab/.gitlab-ci-protected.yml'
+  - 'gitlab/.gitlab-ci-non-protected.yml'

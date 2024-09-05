@@ -1,0 +1,25 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <TargetFramework>$(TargetFramework)</TargetFramework>
+    <CheckForOverflowUnderflow>$(CheckForOverflowUnderflow)</CheckForOverflowUnderflow>
+    <WarningLevel>$(WarningLevel)</WarningLevel>
+    <TreatWarningsAsErrors>$(TreatWarningsAsErrors)</TreatWarningsAsErrors>
+    <ProduceReferenceAssembly>$(ProduceReferenceAssembly)</ProduceReferenceAssembly>
+    <Nullable>$(Nullable)</Nullable>
+    <ImplicitUsings>$(ImplicitUsings)</ImplicitUsings>
+    <AutoGenerateBindingRedirects>$(AutoGenerateBindingRedirects)</AutoGenerateBindingRedirects>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CodeAnalysisRuleSet>$(SolutionRoot)\stylecop.ruleset</CodeAnalysisRuleSet>
+    <EnforceCodeStyleInBuild>$(EnforceCodeStyleInBuild)</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>$(EnableNETAnalyzers)</EnableNETAnalyzers>
+    <AnalysisMode>$(AnalysisMode)</AnalysisMode>
+    <GenerateDocumentationFile>$(GenerateDocumentationFile)</GenerateDocumentationFile>
+    <NoWarn>CA2254</NoWarn>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Remove="System.Net.Http"/>
+  </ItemGroup>
+</Project>

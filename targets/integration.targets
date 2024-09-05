@@ -1,0 +1,9 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="$(SolutionRoot)\targets\_tests.targets"/>
+
+  <ItemGroup>
+    <ProjectReference Include="$(ProjectPath.Replace('tests-integration', 'src').Replace('.Tests.Integration', ''))"/>
+  </ItemGroup>
+
+</Project>

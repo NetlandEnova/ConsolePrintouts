@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="$(SolutionRoot)\targets\_properties.targets"/>
+  <Import Project="$(SolutionRoot)\targets\_analyzers.targets"/>
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <NoWarn>RCS1046, CS0618</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.11.0"/>
+    <PackageReference Include="FakeItEasy" Version="7.4.0"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="FluentAssertions"/>
+    <Using Include="NUnit.Framework"/>
+  </ItemGroup>
+
+</Project>

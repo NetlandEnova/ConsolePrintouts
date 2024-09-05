@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{3C2E81F7-FF9D-416D-B8C1-EA9DD2BF2483}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		.gitlab-ci.yml = .gitlab-ci.yml
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		libman.json = libman.json
+		NuGet.Config = NuGet.Config
+		stylecop.json = stylecop.json
+		stylecop.ruleset = stylecop.ruleset
+		STYLEGUID.md = STYLEGUID.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "targets", "targets", "{4FEC6012-7E30-4502-B325-9F04F0DE76E2}"
+	ProjectSection(SolutionItems) = preProject
+		targets\default.targets = targets\default.targets
+		targets\integration.targets = targets\integration.targets
+		targets\units.targets = targets\units.targets
+		targets\_analyzers.targets = targets\_analyzers.targets
+		targets\_base.targets = targets\_base.targets
+		targets\_enova.targets = targets\_enova.targets
+		targets\_properties.targets = targets\_properties.targets
+		targets\_tests.targets = targets\_tests.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B6F75CF5-B793-4BAF-9AD7-B96CAED10E92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gitlab", "gitlab", "{A0781EE4-7A13-422F-BCF3-AF895ED7940F}"
+	ProjectSection(SolutionItems) = preProject
+		gitlab\.gitlab-ci-non-protected.yml = gitlab\.gitlab-ci-non-protected.yml
+		gitlab\.gitlab-ci-protected.yml = gitlab\.gitlab-ci-protected.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_partials", "_partials", "{7F9F118E-409F-46EA-9226-7F8AC6514D0A}"
+	ProjectSection(SolutionItems) = preProject
+		gitlab\_partials\.gitlab-ci-build.yml = gitlab\_partials\.gitlab-ci-build.yml
+		gitlab\_partials\.gitlab-ci-quality.yml = gitlab\_partials\.gitlab-ci-quality.yml
+		gitlab\_partials\.gitlab-ci-unit-test.yml = gitlab\_partials\.gitlab-ci-unit-test.yml
+		gitlab\_partials\.gitlab-ci-variables.yml = gitlab\_partials\.gitlab-ci-variables.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enova.ConsolePrintouts", "src\Enova.ConsolePrintouts\Enova.ConsolePrintouts.csproj", "{D931A3EC-8860-4F04-847D-142C16D155A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D931A3EC-8860-4F04-847D-142C16D155A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D931A3EC-8860-4F04-847D-142C16D155A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D931A3EC-8860-4F04-847D-142C16D155A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D931A3EC-8860-4F04-847D-142C16D155A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4FEC6012-7E30-4502-B325-9F04F0DE76E2} = {3C2E81F7-FF9D-416D-B8C1-EA9DD2BF2483}
+		{A0781EE4-7A13-422F-BCF3-AF895ED7940F} = {3C2E81F7-FF9D-416D-B8C1-EA9DD2BF2483}
+		{7F9F118E-409F-46EA-9226-7F8AC6514D0A} = {A0781EE4-7A13-422F-BCF3-AF895ED7940F}
+		{D931A3EC-8860-4F04-847D-142C16D155A8} = {B6F75CF5-B793-4BAF-9AD7-B96CAED10E92}
+	EndGlobalSection
+EndGlobal

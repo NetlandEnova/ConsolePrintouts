@@ -1,0 +1,25 @@
+#region only merge_requests
+build-project:
+  extends: .build
+  tags:
+    - non-protected
+  only:
+    - merge_requests
+  retry: 1
+
+unit-test:
+  extends: .unit-test
+  tags:
+    - non-protected
+  only:
+    - merge_requests
+  retry: 1
+
+quality:
+  extends: .quality
+  tags:
+    - non-protected
+  only:
+    - merge_requests
+  retry: 1
+#endregion

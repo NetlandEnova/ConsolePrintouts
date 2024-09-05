@@ -1,0 +1,14 @@
+.build:
+  stage: build
+  image: mcr.microsoft.com/dotnet/sdk:8.0.400
+  before_script:
+    - dotnet restore --packages $NUGET_PACKAGES_DIRECTORY
+  script:
+    - dotnet build --no-restore -warnaserror --no-incremental | tee ./buildlog.txt
+    - grep '0 Error(s)' ./buildlog.txt
+  cache:
+    key: "$CI_COMMIT_SHORT_SHA"
+    paths:
+      - "**/obj"
+      - "**/bin"
+      - "$NUGET_PACKAGES_DIRECTORY/"

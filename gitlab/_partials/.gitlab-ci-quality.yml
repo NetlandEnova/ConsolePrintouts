@@ -1,0 +1,14 @@
+.quality:
+  stage: quality
+  image: gitlab.netland.pl:5000/docker/dotnet-sonar:22.10.3 #it use dotnet sdk 6.0.402
+  script:
+    - dotnet /sonar-scanner/SonarScanner.MSBuild.dll begin /k:$SONAR_PROJECT_KEY /d:sonar.login=$SONAR_TOKEN /d:sonar.host.url=$SONAR_HOST_URL /d:sonar.qualitygate.wait=true
+    - dotnet build --no-restore
+    - dotnet /sonar-scanner/SonarScanner.MSBuild.dll end /d:sonar.login=$SONAR_TOKEN
+  cache:
+    key: "$CI_COMMIT_SHORT_SHA"
+    paths:
+      - "**/obj"
+      - "**/bin"
+      - "$NUGET_PACKAGES_DIRECTORY/"
+    policy: pull

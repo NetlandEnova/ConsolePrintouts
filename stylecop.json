@@ -1,0 +1,13 @@
+{
+	"settings": {
+    "orderingRules": {
+      "elementOrder": [
+        "kind",
+        "constant",
+        "accessibility",
+        "static",
+        "readonly"
+      ]
+    }
+  }
+}

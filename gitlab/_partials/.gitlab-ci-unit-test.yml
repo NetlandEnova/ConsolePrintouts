@@ -1,0 +1,12 @@
+.unit-test:
+  stage: test
+  image: mcr.microsoft.com/dotnet/sdk:6.0.402
+  script:
+    - dotnet test --no-build --no-restore --filter 'FullyQualifiedName!~Integration&FullyQualifiedName!~e2e'
+  cache:
+    key: "$CI_COMMIT_SHORT_SHA"
+    paths:
+      - "**/obj"
+      - "**/bin"
+      - "$NUGET_PACKAGES_DIRECTORY/"
+    policy: pull

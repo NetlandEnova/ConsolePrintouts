@@ -1,0 +1,15 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="$(SolutionRoot)\targets\_base.targets"/>
+  <Import Project="$(SolutionRoot)\targets\_enova.targets" />
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>$(ProjectName).Tests</_Parameter1>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>$(ProjectName).Tests.Integration</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>

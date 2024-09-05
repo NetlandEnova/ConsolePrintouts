@@ -1,0 +1,34 @@
+#region default
+build-project-p:
+  extends: .build
+  tags:
+    - protected
+  only:
+    - develop
+    - master
+    - tags
+    - /^release\/[0-9]+(?:.[0-9]+)+$/
+  retry: 1
+
+unit-test-p:
+  extends: .unit-test
+  tags:
+    - protected
+  only:
+    - develop
+    - master
+    - tags
+    - /^release\/[0-9]+(?:.[0-9]+)+$/
+  retry: 1
+
+quality-p:
+  extends: .quality
+  tags:
+    - protected
+  only:
+    - develop
+    - master
+    - tags
+    - /^release\/[0-9]+(?:.[0-9]+)+$/
+  retry: 1
+#endregion

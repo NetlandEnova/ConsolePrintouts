@@ -1,0 +1,30 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+    <Reference Include="InsERT.Moria.API">
+      <HintPath>$(NexoAssembliesPath)\InsERT.Moria.API.dll</HintPath>
+    </Reference>
+    <Reference Include="InsERT.Moria.BibliotekaDokumentow">
+      <HintPath>$(NexoAssembliesPath)\InsERT.Moria.BibliotekaDokumentow.dll</HintPath>
+    </Reference>
+    <Reference Include="InsERT.Moria.DaneDomyslne">
+      <HintPath>$(NexoAssembliesPath)\InsERT.Moria.DaneDomyslne.dll</HintPath>
+    </Reference>
+    <Reference Include="InsERT.Moria.ModelDanych">
+      <HintPath>$(NexoAssembliesPath)\InsERT.Moria.ModelDanych.dll</HintPath>
+    </Reference>
+    <Reference Include="InsERT.Moria.Sfera">
+      <HintPath>$(NexoAssembliesPath)\InsERT.Moria.Sfera.dll</HintPath>
+    </Reference>
+    <Reference Include="InsERT.Mox.Core">
+      <HintPath>$(NexoAssembliesPath)\InsERT.Mox.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="InsERT.Mox.EntityFramework.Core">
+      <HintPath>$(NexoAssembliesPath)\InsERT.Mox.EntityFramework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="InsERT.Mox.EntityFrameworkSupport">
+      <HintPath>$(NexoAssembliesPath)\InsERT.Mox.EntityFrameworkSupport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

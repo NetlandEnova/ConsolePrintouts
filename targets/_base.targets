@@ -1,0 +1,6 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="$(SolutionRoot)\targets\_properties.targets" />
+  <Import Project="$(SolutionRoot)\targets\_analyzers.targets" />
+
+</Project>
